@@ -45,9 +45,9 @@ the employee is left to the criteria of the candidate.
 
 ## Design Snippets
 
-![Employee List Page](assets/employee-list.PNG)
-![Employee Edit / Create Form 1](assets/form-part-1.PNG)
-![Employee Edit / Create Form 2](assets/form-part-2.PNG)
+![Employee List Page](assets/employee-list.png)
+![Employee Edit / Create Form 1](assets/form-part-1.png)
+![Employee Edit / Create Form 2](assets/form-part-2.png)
 
 ## Technology / Documentation Recommendations
 
