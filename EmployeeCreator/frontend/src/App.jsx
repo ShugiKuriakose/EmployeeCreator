@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import EmployeeListLoader from "./containers/EmployeeListLoader";
+import EmployeeListLoader from "./containers/EmployeeListLoader/EmployeeListLoader";
 import CreateEmployeeForm from "./components/CreateEmployeeForm";
-import Employee from "./components/Employee";
+import Employee from "./components/EmployeeCard/Employee";
 import { getAllEmployees } from "./services/employee-services";
 
 function App() {

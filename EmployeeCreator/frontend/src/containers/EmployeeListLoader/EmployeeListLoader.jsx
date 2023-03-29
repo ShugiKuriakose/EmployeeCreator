@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import EmployeeList from "../components/EmployeeList";
-import { getAllEmployees } from "../services/employee-services";
+import { NavLink } from "react-router-dom";
+import EmployeeList from "../../components/EmployeeList";
+import { getAllEmployees } from "../../services/employee-services";
+import styles from "./EmployeeListLoader.module.scss";
 
 const EmployeeListLoader = () => {
   const [posts, setPosts] = useState([]);
@@ -22,7 +24,15 @@ const EmployeeListLoader = () => {
     <>
       {loading && <p>Loading</p>}
       {!loading && !error && (
-        <EmployeeList posts={posts} filterPosts={filterPosts} />
+        <div>
+          <h1>Employees' List</h1>
+          <NavLink to={"/employees/new"}>
+            <button className={styles.addempButton}>Add Employee</button>
+          </NavLink>
+          <hr />
+
+          <EmployeeList posts={posts} filterPosts={filterPosts} />
+        </div>
       )}
       {!loading && error && <p style={{ color: "red" }}>{error.message}</p>}
     </>

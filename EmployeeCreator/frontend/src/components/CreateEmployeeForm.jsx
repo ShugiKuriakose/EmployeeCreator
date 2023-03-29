@@ -5,7 +5,7 @@ import { createEmployee } from "../services/employee-services";
 const CreateEmployeeForm = () => {
   const initialFormValues = {
     name: "",
-    employmentType: "",
+    employmentType: "Permanent",
     email: "",
     yearsEmployed: 0,
   };

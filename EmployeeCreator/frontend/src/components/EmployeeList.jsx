@@ -1,11 +1,11 @@
 import React from "react";
-import Employee from "./Employee";
+import Employee from "./EmployeeCard/Employee";
 
 const EmployeeList = ({ posts, filterPosts }) => {
   return (
     <>
       {posts.map((post) => (
-        <Employee post={post} filterPosts={filterPosts} />
+        <Employee key={post.id} post={post} filterPosts={filterPosts} />
       ))}
     </>
   );
